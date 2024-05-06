@@ -1,6 +1,6 @@
-#Command line for the win project
+# Command line for the win project
 
-##Steps to send the files from the local machine to the distant machine:
+## Steps to send the files from the local machine to the distant machine:
 * Start an SFTP session:
 ```
 sftp Username@Host
