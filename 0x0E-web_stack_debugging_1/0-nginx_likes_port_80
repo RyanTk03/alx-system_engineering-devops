@@ -7,8 +7,11 @@ if ! command -v nginx &> /dev/null; then
 	sudo apt install nginx -y
 fi
 
-cd /etc/nginx/sites-enabled/ || exit;
+cd /etc/nginx/sites-enabled/ || exit
 rm default
-ln -s /etc/nginx/sites-available/default default;
+
+ln -s /etc/nginx/sites-available/default default
+
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
 
 service nginx restart
