@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Make fix short and sweet.
+
+service nginx restart
+kill -9 $(cat /run/nginx.pid)
